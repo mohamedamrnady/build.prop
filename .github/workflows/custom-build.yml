@@ -25,9 +25,9 @@ jobs:
         run: chmod +x *.sh
 
       - name: Download build from secrets
-        if: secrets.LINK != null
         env:
           LINK: ${{ secrets.LINK }}
+        if: ${{ env.LINK != null}}
         run: |
           mkdir dl
           cd dl
