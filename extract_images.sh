@@ -21,7 +21,6 @@ for file in ./dl/*; do                 # List directory ./dl/*
 				7z e "$file" -o"extracted_archive_images" "payload.bin" -r &>/dev/null
 				mv -f "extracted_archive_images/payload.bin" "extracted_archive_images/$basename.bin"
 			else # else assume it is factory and extract everything
-				echo "extracting everything"
 				7z e "$file" -o"extracted_archive_images" "*/*.zip" -r -y &>/dev/null
 			fi
 
