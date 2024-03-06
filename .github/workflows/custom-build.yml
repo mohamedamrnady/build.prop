@@ -1,4 +1,4 @@
-name: Build props
+name: Build custom props
 
 on:
   workflow_dispatch:
