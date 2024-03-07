@@ -2,8 +2,6 @@ name: Build props (on schedule)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '37 13 7 * *' # At 13:37 on day-of-month 7. (UTC)
 
 jobs:
   prepare_build:
